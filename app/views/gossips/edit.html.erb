@@ -1,0 +1,10 @@
+  <p> Listing des Gossips </p>
+
+  <%= form_tag('/gossips', method: "post") do %>
+
+  <%= text_field_tag ("gossip[anonymous_author]") %><br/>
+  <%= text_field_tag ("gossip[content]") %><br/>
+  <%= submit_tag("Créer") %>
+  
+<% end %>
+<%= link_to 'Clique pour détruire', @gossip, method: :delete %>

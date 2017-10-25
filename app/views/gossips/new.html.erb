@@ -1,0 +1,13 @@
+  <h1> Listing des Gossips </h1>
+
+  <%= form_tag("/gossips", method: "post") do %>
+
+ Votre p'tit nom:<br/>
+  <%= text_field_tag ("gossip[anonymous_author]") %><br/>
+</br>
+Votre gossip: <br/>
+  <%= text_field_tag ("gossip[content]") %><br/>
+  <%= submit_tag("Post") %>
+  
+<% end %>
+
