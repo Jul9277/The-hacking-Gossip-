@@ -50,8 +50,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-groupe : production  do
-  gem ' pg ' , ' 0.20.0 '
+groupe :production  do
+  gem 'pg', '0.20.0'
 fin
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
